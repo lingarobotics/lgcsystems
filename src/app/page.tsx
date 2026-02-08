@@ -2,6 +2,17 @@
 
 import { useState } from "react";
 
+import Image from "next/image";
+
+<Image
+  src="/lgc-logo.png"
+  alt="LGC Systems logo"
+  width={64}
+  height={64}
+  priority
+/>
+
+
 export default function Home() {
   const [showSystems, setShowSystems] = useState(false);
 
@@ -13,8 +24,6 @@ export default function Home() {
         alignItems: "center",
         justifyContent: "center",
         padding: "2rem",
-        backgroundColor: "#0f1115",
-        color: "#e6e6e6",
       }}
     >
       <section style={{ maxWidth: "720px", width: "100%" }}>
@@ -22,13 +31,13 @@ export default function Home() {
           LGC Systems
         </h1>
 
-        <p style={{ marginBottom: "1.5rem", color: "#b5b5b5" }}>
+        <p style={{ marginBottom: "1.5rem" }}>
           LGC Systems is a learning-first technology initiative focused on
           clarity, reasoning, and long-term understanding — not shortcuts,
           hype, or surface-level progress.
         </p>
 
-        <p style={{ marginBottom: "2rem", color: "#9aa0a6" }}>
+        <p style={{ marginBottom: "2rem" }}>
           The goal is simple: build systems that help people think better,
           learn deeply, and verify what they truly understand.
         </p>
@@ -40,9 +49,7 @@ export default function Home() {
               padding: "0.75rem 1.5rem",
               backgroundColor: "#3b82f6",
               color: "#ffffff",
-              border: "none",
               borderRadius: "6px",
-              cursor: "pointer",
               fontSize: "1rem",
             }}
           >
@@ -61,19 +68,10 @@ export default function Home() {
           >
             <a
               href="https://concept.lgcsystems.xyz"
-              style={{
-                flex: "1 1 260px",
-                padding: "1rem",
-                border: "1px solid #2a2f45",
-                borderRadius: "6px",
-                textDecoration: "none",
-                color: "#e6e6e6",
-              }}
+              className="system-card"
             >
-              <h3 style={{ marginBottom: "0.5rem" }}>
-                LGC Concept AI
-              </h3>
-              <p style={{ fontSize: "0.9rem", color: "#a0a0a0" }}>
+              <h3>LGC Concept AI</h3>
+              <p>
                 Concept-first learning with doubt clearing and teach-back
                 verification.
               </p>
@@ -81,25 +79,18 @@ export default function Home() {
 
             <a
               href="https://learnlogic.lgcsystems.xyz"
-              style={{
-                flex: "1 1 260px",
-                padding: "1rem",
-                border: "1px solid #2a2f45",
-                borderRadius: "6px",
-                textDecoration: "none",
-                color: "#e6e6e6",
-              }}
+              className="system-card"
             >
-              <h3 style={{ marginBottom: "0.5rem" }}>
-                LGC LearnLogic Code
-              </h3>
-              <p style={{ fontSize: "0.9rem", color: "#a0a0a0" }}>
+              <h3>LGC LearnLogic Code</h3>
+              <p>
                 Logic-first programming practice focused on reasoning
                 and execution flow.
               </p>
             </a>
           </div>
         )}
+
+      
       </section>
     </main>
   );
