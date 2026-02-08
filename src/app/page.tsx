@@ -67,7 +67,7 @@ export default function Home() {
             }}
           >
             <a
-              href="https://concept.lgcsystems.xyz"
+              href="https://concept-ai.lgcsystems.xyz"
               className="system-card"
             >
               <h3>LGC Concept AI</h3>
@@ -78,7 +78,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://learnlogic.lgcsystems.xyz"
+              href="https://learn-logic-code.lgcsystems.xyz"
               className="system-card"
             >
               <h3>LGC LearnLogic Code</h3>
