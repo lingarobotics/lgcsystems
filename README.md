@@ -88,7 +88,6 @@ No over-engineering.
 
 ## 📁 Project Structure
 
-```text
 src/
 └─ app/
    ├─ layout.tsx        # Global layout, navigation, metadata
@@ -149,13 +148,13 @@ All without compromising the core philosophy.
 
 ---
 
-## 📜 License
+## Platform Ownership
 
-License details will be added as the ecosystem stabilizes.
+**LGC Systems** is a technology initiative founded and maintained by **Ramalingam Jayavelu**.
 
----
+This repository contains the source code and infrastructure for the **LGC Systems platform and website** (lgcsystems.xyz), which serves as the umbrella platform for systems, products, and research initiatives developed under LGC Systems.
 
-**LGC Systems is not about building fast.**  
-**It is about building right.**
+All platform architecture, system design, and source code contained in this repository are the intellectual property of **Ramalingam Jayavelu under LGC Systems**.
 
+No external organization, institution, or company holds ownership, governance rights, or claim over this platform or its underlying infrastructure.
 
