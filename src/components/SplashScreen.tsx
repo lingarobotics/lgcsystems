@@ -9,7 +9,7 @@ export default function SplashScreen() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(false);
-    }, 1600); // duration of splash
+    }, 1850);
 
     return () => clearTimeout(timer);
   }, []);
@@ -21,22 +21,29 @@ export default function SplashScreen() {
       style={{
         position: "fixed",
         inset: 0,
-        backgroundColor: "#0f1115",
+        background:
+          "radial-gradient(circle at 20% 18%, rgba(79, 141, 247, 0.2), transparent 50%), linear-gradient(180deg, #050c17 0%, #040911 100%)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         zIndex: 9999,
-        animation: "fadeOut 0.6s ease forwards",
-        animationDelay: "1.2s",
+        animation: "fadeOut 0.55s ease forwards",
+        animationDelay: "1.3s",
       }}
     >
-      <div style={{ textAlign: "center" }}>
+      <div
+        style={{
+          textAlign: "center",
+          animation: "splashIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        }}
+      >
         <Image
           src="/lgc-logo.png"
           alt="LGC Systems logo"
           width={120}
           height={120}
           priority
+          style={{ animation: "splashLogoFloat 1.3s ease-in-out infinite" }}
         />
 
         <p
@@ -47,7 +54,7 @@ export default function SplashScreen() {
             letterSpacing: "0.04em",
           }}
         >
-          Learning • Reasoning • Clarity
+          Learn • Govern • Construct
         </p>
       </div>
     </div>

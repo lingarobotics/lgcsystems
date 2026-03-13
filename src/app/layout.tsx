@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import SplashScreen from "@/components/SplashScreen";
+import ScrollReveal from "../components/ScrollReveal";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,70 +50,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable}`}
-        style={{
-          margin: 0,
-          backgroundColor: "#0f1115",
-          color: "#e6e6e6",
-          fontFamily: "var(--font-geist-sans), system-ui, sans-serif",
-        }}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {/* Splash Screen */}
         <SplashScreen />
+        <ScrollReveal />
 
         {/* Global Navigation */}
-        <header
-          style={{
-            position: "sticky",
-            top: 0,
-            zIndex: 50,
-            backgroundColor: "#0f1115",
-            borderBottom: "1px solid #2a2f45",
-          }}
-        >
-          <nav
-            style={{
-              maxWidth: "960px",
-              margin: "0 auto",
-              padding: "0.75rem 1.5rem",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
+        <header className="site-header">
+          <nav className="site-nav">
             {/* Brand / Home */}
-            <Link
-              href="/"
-              style={{
-                fontWeight: 600,
-                fontSize: "1rem",
-                color: "#e6e6e6",
-                textDecoration: "none",
-              }}
-            >
+            <Link href="/" className="brand-link">
               LGC Systems
             </Link>
 
             {/* Nav Links */}
-            <div style={{ display: "flex", gap: "1.25rem" }}>
-              <Link
-                href="/docs"
-                style={{
-                  color: "#9aa0a6",
-                  textDecoration: "none",
-                }}
-              >
+            <div className="nav-links">
+              <Link href="/docs" className="nav-link">
                 Docs
               </Link>
 
-              <Link
-                href="/contact"
-                style={{
-                  color: "#9aa0a6",
-                  textDecoration: "none",
-                }}
-              >
+              <Link href="/contact" className="nav-link">
                 Contact
               </Link>
             </div>

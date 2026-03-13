@@ -1,19 +1,12 @@
 export default function ContactPage() {
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        padding: "3rem 2rem",
-      }}
-    >
-      <section style={{ maxWidth: "760px", width: "100%" }}>
-        <h1 style={{ fontSize: "2.2rem", marginBottom: "1rem" }}>
+    <main className="content-main">
+      <section className="contact-page" data-reveal>
+        <h1 data-reveal>
           Contact — LGC Systems
         </h1>
 
-        <p style={{ marginBottom: "2rem" }}>
+        <p data-reveal>
           LGC Systems exists to support learning that is accessible,
           reasoning-focused, and free from unnecessary barriers.
           If your intent aligns with this philosophy, you’re welcome to
@@ -21,11 +14,11 @@ export default function ContactPage() {
         </p>
 
         {/* ---------- Why Contact ---------- */}
-        <h2 style={{ marginBottom: "0.75rem" }}>
+        <h2 data-reveal>
           Why You Can Contact Me
         </h2>
 
-        <ul style={{ paddingLeft: "1.25rem", marginBottom: "2rem" }}>
+        <ul data-reveal>
           <li>
             To discuss ideas related to <strong>free education</strong> and
             learning at no cost
@@ -44,49 +37,49 @@ export default function ContactPage() {
         </ul>
 
         {/* ---------- Motto ---------- */}
-        <h2 style={{ marginBottom: "0.75rem" }}>
+        <h2 data-reveal>
           Core Motto
         </h2>
 
-        <p style={{ marginBottom: "2rem", fontStyle: "italic" }}>
+        <p className="docs-quote" data-reveal>
           “Learning should cost effort and consistency — not money.”
         </p>
 
         {/* ---------- Contact Details ---------- */}
-        <h2 style={{ marginBottom: "0.75rem" }}>
+        <h2 data-reveal>
           Contact Information
         </h2>
 
-        <p style={{ marginBottom: "0.5rem" }}>
+        <p data-reveal>
           Email:
         </p>
 
-        <p style={{ marginBottom: "1.5rem" }}>
+        <p data-reveal>
           <a
             href="mailto:lingarobotics@gmail.com"
-            style={{ color: "#3b82f6", fontWeight: 500 }}
+            className="contact-link"
           >
             lingarobotics@gmail.com
           </a>
         </p>
 
-        <p style={{ marginBottom: "0.5rem" }}>
+        <p data-reveal>
           GitHub:
         </p>
 
-        <p>
+        <p data-reveal>
           <a
             href="https://github.com/lingarobotics"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "#3b82f6", fontWeight: 500 }}
+            className="contact-link"
           >
             https://github.com/lingarobotics
           </a>
         </p>
 
         {/* ---------- Closing ---------- */}
-        <p style={{ marginTop: "3rem", color: "#9aa0a6" }}>
+        <p data-reveal>
           LGC Systems is built with the belief that knowledge grows best
           when it is shared, questioned, and refined together.
         </p>
