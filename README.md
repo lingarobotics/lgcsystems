@@ -148,6 +148,23 @@ All without compromising the core philosophy.
 
 ---
 
+---
+
+## 📘 Development Documentation
+
+Detailed platform development, including:
+
+- system integration  
+- UI evolution  
+- structure changes  
+- platform visibility  
+
+is available in:
+
+👉 [`/docs`](./docs/README.md)
+
+---
+
 ## Platform Ownership
 
 **LGC Systems** is a technology initiative founded and maintained by **Ramalingam Jayavelu**.
