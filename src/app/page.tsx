@@ -70,6 +70,18 @@ export default function Home() {
                 and execution flow.
               </p>
             </a>
+
+            <a
+              href="https://articulate-devlang.lgcsystems.xyz"
+              className="system-card"
+              data-reveal
+            >
+              <h3>LGC Articulate DevLang</h3>
+              <p>
+                Think before you speak — structured articulation for clear,
+                confident, and professional communication.
+              </p>
+            </a>
           </div>
         )}
       </section>
